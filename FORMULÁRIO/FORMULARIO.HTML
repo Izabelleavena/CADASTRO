@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro aluno</title>
+        <link rel="stylesheet" type="text/css" href="formulário.css">
+
+    </head>
+<body>
+ 
+    <div class="campo">
+        <h1 id="titulo"> Cadastro de Alunos</h1>
+        <p id="subtitulo"> Complete suas informações</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+              <labe for="name"><strong>Nome</strong></label>
+              <input type="text" name="Nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="sobrenome" required>
+            </div>
+            
+        </fieldset>
+         <div class="campo">
+             <label for="email"><strong>Email</strong></label>
+             <input type="email" name="email" id="email" required>
+
+         </div>
+         <div class="campo">
+             <label><strong>Qual seu objetivo com a atividade física?</strong></label>
+             <label>
+                 <input type="radio" name="devweb" value="emagrecimento">emagrecimento
+             </label>
+             <label>
+                 <input type="radio" name="devweb" value="Hipertrofia">Hipertrofia
+             </label>
+             <label>
+                 <input type="radio" name="devweb" value="Saúde">Saúde
+             </label>
+             <label>
+                 <input type="radio" name="devweb" value="Fortalecimento">Fortalecimento
+             </label>
+        </div>
+        <div class="campo">
+            <label for="vezes"><strong> Quantas vezes pretende treinar na semana?</strong></label>
+            <select id="vezes">
+                <option selected disabled value="">Escolha</option>
+                <option>Duas vezes</option>
+                <option>Três vezes</option>
+                <option>Quatro vezes</option>
+                <option>Cinco vezes</option>
+            </select>
+         </div>
+          <fieldset class="grupo">
+              <div id="check">
+                  <label><strong>Selecione as atividades que já teve vivência.</strong></label><br>
+                  <input type="checkbox" id="crossfit" name="crossfit" value="crossfit">
+                  <label for="crossfit">Crossfit</label>
+                  <input type="checkbox" id="musculação" name="musculação" value="musculação">
+                  <label for="musculação">musculação</label>
+                  <input type="checkbox" id="Funcional" name="Funcional" value="Funcional">
+                  <label for="Funcional">Funcional</label>
+                  <input type="checkbox" id="Pilates" name="Pilates" value="Pilates">
+                  <label for="Pilates">Pilates</label>
+                </div>
+         </fieldset>
+         <div class="campo">
+             <br>
+             <label><strong>Conte um pouco sobre você, caso tenha lesões <br>ou sente dor em algum região é importante comentar.</strong></label>
+            <textarea rows="6" style="width: 26em;" id="texto" name="texto"></textarea>
+            </div>
+            <button class="botão" type="submit">Enviar</button>
+        
+        </form>
+    
+
+</body>    
+</html>
